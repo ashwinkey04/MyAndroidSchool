@@ -1,5 +1,5 @@
 <!--
-  ~ Copyright 2018, The Android Open Source Project
+  ~ Copyright (C) 2018 Google Inc.
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -18,9 +18,18 @@
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Theme customization. -->
+        <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+
+    <style name="NameStyle">
+        <item name="android:layout_marginTop">@dimen/layout_margin</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:paddingTop">@dimen/small_padding</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">@dimen/text_size</item>
+    </style>
+
 </resources>

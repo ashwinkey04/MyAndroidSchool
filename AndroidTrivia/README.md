@@ -1,30 +1,24 @@
-AndroidTrivia - starter code
-============================
+AboutMeInteractive - Starter Code
+=================================
 
-Starter code for Android Kotlin Fundamentals codelab 3.1: Create and add a
-fragment.
+Starter code for the Adding user Interactivity codelab.
 
 Introduction
 ------------
+This is the AboutMe app the you built in a previous codelab.
+This app consists of a TextView view to show text,
+an ImageView, and a ScrollView with scrollable text.
 
-The AndroidTrivia app asks the user trivia questions about Android development.
-It makes use of the navigation component within Jetpack to move the user between
-screens. Each screen is implemented as a fragment.
-
-The app navigates using buttons, the app bar, and a navigation drawer. Because
-students haven't yet learned about saving data or the Android lifecycle, the app
-tries to eliminate bugs caused by configuration changes.
-
-Prerequisites
--------------
+Pre-requisites
+--------------
 
 You need to know:
-- The fundamentals of Kotlin.
-- How to create basic Android apps in Kotlin.
 - How to open, build, and run apps with Android Studio.
-- How to work with layouts.
+- How to create a basic app with one Activity and one layout
+  that uses TextView, Button, and a basic layout such as LinearLayout.
+- How to add a click handler to a Button.
 
-Getting started
+Getting Started
 ---------------
 
 1. Download and run the app.
@@ -32,7 +26,7 @@ Getting started
 License
 -------
 
-Copyright 2019 Google, Inc.
+Copyright 2018 Google, Inc.
 
 Licensed to the Apache Software Foundation (ASF) under one or more contributor
 license agreements.  See the NOTICE file distributed with this work for
