@@ -10,5 +10,6 @@
 </div>
 
 
-
 #### [Adding the navigation drawer](https://codelabs.developers.google.com/codelabs/kotlin-android-training-add-navigation/index.html?index=..%2F..android-kotlin-fundamentals#9)
+
+#### [Safe Args plugin](https://codelabs.developers.google.com/codelabs/kotlin-android-training-start-external-activity/index.html?index=..%2F..android-kotlin-fundamentals#3)

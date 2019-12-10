@@ -25,7 +25,7 @@
       </configuration>
     </facet>
     <facet type="kotlin-language" name="Kotlin">
-      <configuration version="3" platform="JVM 1.6" allPlatforms="JVM [1.6]" useProjectSettings="false" pureKotlinSourceFolders="$MODULE_DIR$/src/debug/kotlin;/home/ashwinr/Downloads/andfun-kotlin-android-trivia/app/src/debug/java;/home/ashwinr/Downloads/andfun-kotlin-android-trivia/app/src/release/kotlin;/home/ashwinr/Downloads/andfun-kotlin-android-trivia/app/src/release/java;/home/ashwinr/Downloads/andfun-kotlin-android-trivia/app/src/debugAndroidTest/kotlin;/home/ashwinr/Downloads/andfun-kotlin-android-trivia/app/src/debugUnitTest/kotlin;/home/ashwinr/Downloads/andfun-kotlin-android-trivia/app/src/releaseUnitTest/kotlin">
+      <configuration version="3" platform="JVM 1.6" allPlatforms="JVM [1.6]" useProjectSettings="false" pureKotlinSourceFolders="$MODULE_DIR$/src/debug/kotlin;/home/ashwinr/Documents/MyAndroidSchool/AndroidTrivia/app/src/debug/java;/home/ashwinr/Documents/MyAndroidSchool/AndroidTrivia/app/src/release/kotlin;/home/ashwinr/Documents/MyAndroidSchool/AndroidTrivia/app/src/release/java;/home/ashwinr/Documents/MyAndroidSchool/AndroidTrivia/app/src/debugAndroidTest/kotlin;/home/ashwinr/Documents/MyAndroidSchool/AndroidTrivia/app/src/debugUnitTest/kotlin;/home/ashwinr/Documents/MyAndroidSchool/AndroidTrivia/app/src/releaseUnitTest/kotlin">
         <compilerSettings />
         <compilerArguments>
           <option name="destination" value="$MODULE_DIR$/build/tmp/kotlin-classes/debug" />
