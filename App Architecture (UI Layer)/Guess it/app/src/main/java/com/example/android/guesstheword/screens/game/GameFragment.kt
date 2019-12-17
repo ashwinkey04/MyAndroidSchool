@@ -52,19 +52,16 @@ class GameFragment : Fragment() {
 
         binding.correctButton.setOnClickListener {
             viewModel.onCorrect()
-            updateScoreText()
             updateWordText()
         }
         binding.skipButton.setOnClickListener {
             viewModel.onSkip()
-            updateScoreText()
             updateWordText()
         }
         viewModel.score.observe(this, Observer { newScore ->
             binding.scoreText.text = newScore.toString()
 
         })
-        updateScoreText()
         updateWordText()
         return binding.root
 
@@ -84,20 +81,12 @@ class GameFragment : Fragment() {
         findNavController(this).navigate(action)
     }
 
-    /**
-     * Moves to the next word in the list
-     */
 
-    /** Methods for buttons presses **/
-
-
-    /** Methods for updating the UI **/
 
     private fun updateWordText() {
-        binding.wordText.text = viewModel.word
+        binding.wordText.text = viewModel.word.value
 
     }
 
-    private fun updateScoreText() {
-    }
+
 }
