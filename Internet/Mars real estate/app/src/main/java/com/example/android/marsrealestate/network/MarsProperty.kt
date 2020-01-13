@@ -17,16 +17,17 @@
 
 package com.example.android.marsrealestate.network
 
-import android.os.Parcel
 import android.os.Parcelable
+import androidx.lifecycle.LiveData
+import com.example.android.marsrealestate.overview.MarsApiStatus
 import com.squareup.moshi.Json
-import kotlinx.android.parcel.Parceler
 import kotlinx.android.parcel.Parcelize
 
 /**
- * This data class defines a Mars property which includes an ID, the image URL, the type (sale
- * or rental) and the price (monthly if it's a rental).
- * The property names of this data class are used by Moshi to match the names of values in JSON.
+ * Gets Mars real estate property information from the Mars API Retrofit service and updates the
+ * [MarsProperty] and [MarsApiStatus] [LiveData]. The Retrofit service returns a coroutine
+ * Deferred, which we await to get the result of the transaction.
+ * @param filter the [MarsApiFilter] that is sent as part of the web server request
  */
 @Parcelize
 data class MarsProperty(
@@ -34,26 +35,7 @@ data class MarsProperty(
         // used to map img_src from the JSON to imgSrcUrl in our class
         @Json(name = "img_src") val imgSrcUrl: String,
         val type: String,
-        val price: Double): Parcelable {
-    constructor(parcel: Parcel) : this(
-            parcel.readString(),
-            parcel.readString(),
-            parcel.readString(),
-            parcel.readDouble()) {
-    }
-
-    companion object : Parceler<MarsProperty> {
-
-        override fun MarsProperty.write(parcel: Parcel, flags: Int) {
-            parcel.writeString(id)
-            parcel.writeString(imgSrcUrl)
-            parcel.writeString(type)
-            parcel.writeDouble(price)
-        }
-
-        override fun create(parcel: Parcel): MarsProperty {
-            return MarsProperty(parcel)
-        }
-    }
-
+        val price: Double) : Parcelable {
+    val isRental
+        get() = type == "rent"
 }
